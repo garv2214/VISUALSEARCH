@@ -1,7 +1,21 @@
-This is my first ever college mini-project on Python using OpenCV.
-<br>
-We are using some of the basic Python libraries like numpy, PIL, pytesseract, cv2, time, os, webbrowser, selenium, webdriver, pathlib, signal, platform, sys, psutil.
-<br>
-This is the initial phase code of Visual-Search lens Application Software that will work as a clone of Google-Lens software.
-<br>
-Author-Garv Sharma
+# SearchLens
+SearchLens is a Python-based visual search tool that combines computer vision, OCR, and web automation to enable powerful image-based searching. It captures images from your camera and searches them using Google Lens, with additional features for image analysis and text detection.
+
+## Features
+- Real-time camera capture with visual feedback
+- Image analysis (blur detection, brightness, face detection)
+- OCR (Optical Character Recognition) using Tesseract
+- Automated Google Lens searching
+- Multiple search modes (Visual, Shopping, Text, Places)
+- Detailed image analysis including dominant colors and quality estimation
+- Debug information and system compatibility checks
+- 
+## Requirements
+- Python 3.7+
+- OpenCV
+- Tesseract OCR
+- Google Chrome
+- ChromeDriver
+- Additional Python packages (see requirements.txt)
+
+Author- Garv Sharma

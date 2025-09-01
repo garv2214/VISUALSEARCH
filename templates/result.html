@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="result-section">
+  <h2>Extracted Text</h2>
+  <div class="extracted-text-box">
+    <pre>{{ text }}</pre>
+  </div>
+  <a href="/upload" class="btn back-btn">Upload Another Image</a>
+</section>
+{% endblock %}

@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Visual Search OCR</h1>
+      <p>A powerful command-line tool that extracts text from images using advanced OCR and visual search capabilities.</p>
+      <div class="hero-buttons">
+        <a href="#installation" class="btn get-started">Get Started</a>
+        <a href="https://github.com/garv2214/VISUALSEARCH" target="_blank" class="btn view-on-github">View on GitHub</a>
+      </div>
+    </div>
+    <div class="hero-code-block">
+      <div class="code-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="file-name">VisualSearch.py</span>
+      </div>
+      <pre><code>
+# Capture and search an image
+python VisualSearch.py
+
+# Perform OCR and search
+python VisualSearch.py --ocr
+
+# Analyze an image
+python VisualSearch.py --analyze</code></pre>
+    </div>
+  </div>
+</section>
+
+<section class="content-section" id="features">
+  <h2>Key Features</h2>
+  <div class="card-grid">
+    <div class="card">
+      <div class="icon"><img src="{{ url_for('static', filename='icon-camera.png') }}" alt="Camera Icon"></div>
+      <h3>Live Camera Capture</h3>
+      <p>Capture and process images directly from your webcam with a simple command-line interface.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><img src="{{ url_for('static', filename='icon-ocr.png') }}" alt="OCR Icon"></div>
+      <h3>Advanced OCR</h3>
+      <p>Extract accurate text from images using the powerful Tesseract OCR engine with preprocessing for better results.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><img src="{{ url_for('static', filename='icon-search.png') }}" alt="Search Icon"></div>
+      <h3>Visual Search</h3>
+      <p>Automate Google Lens searches directly from the terminal for visual queries and object identification.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><img src="{{ url_for('static', filename='icon-analytics.png') }}" alt="Analytics Icon"></div>
+      <h3>Image Analysis</h3>
+      <p>Analyze image quality, blur, brightness, dominant colors, and edge density for optimal results.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><img src="{{ url_for('static', filename='icon-cli.png') }}" alt="CLI Icon"></div>
+      <h3>Command-Line Interface</h3>
+      <p>A simple and intuitive command-line interface for quick and efficient visual searches.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><img src="{{ url_for('static', filename='icon-debug.png') }}" alt="Debug Icon"></div>
+      <h3>Debug Information</h3>
+      <p>Access detailed debugging information about your system and dependencies to troubleshoot issues.</p>
+    </div>
+  </div>
+</section>
+
+<section class="content-section installation-section" id="installation">
+  <h2>Installation</h2>
+  <div class="installation-steps">
+    <div class="step">
+      <span class="step-number">1</span>
+      <h3>Clone the Repository</h3>
+      <pre><code>git clone https://github.com/garv2214/VISUALSEARCH.git
+cd VISUALSEARCH</code></pre>
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      <h3>Requirements</h3>
+      <pre><code>pip install -r requirements.txt</code></pre>
+      <p>Requires Python 3.6+</p>
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      <h3>Run the Application</h3>
+      <pre><code>python VisualSearch.py</code></pre>
+    </div>
+  </div>
+</section>
+
+<section class="content-section" id="contributing">
+  <h2>Contributing</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Report Issues</h3>
+      <p>Found a bug or have a feature request? Open an issue on GitHub.</p>
+    </div>
+    <div class="card">
+      <h3>Submit Pull Requests</h3>
+      <p>Have a fix or improvement? Submit a pull request with clear descriptions.</p>
+    </div>
+    <div class="card">
+      <h3>Improve Documentation</h3>
+      <p>Help improve the README, add examples, or clarify usage instructions.</p>
+    </div>
+    <div class="card">
+      <h3>Add Features</h3>
+      <p>Implement new features or contribute to the existing code base.</p>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

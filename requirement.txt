@@ -1,0 +1,8 @@
+opencv-python
+pytesseract
+numpy
+pillow
+selenium
+scikit-learn
+psutil
+webdriver-manager

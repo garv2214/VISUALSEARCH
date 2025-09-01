@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <a href="/">
+          <img src="{{ url_for('static', filename='visual-search-logo.png') }}" alt="Visual Search Logo" class="logo-img">
+        </a>
+        <a href="/" class="logo-text">Visual Search</a>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#installation">Installation</a>
+        <a href="#usage">Usage</a>
+        <a href="#contributing">Contributing</a>
+        <a href="https://github.com/garv2214/VISUALSEARCH" target="_blank" class="github-btn">
+          GitHub
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h3>Visual Search</h3>
+        <p>A professional OCR and visual search tool built with Python.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="https://github.com/garv2214/VISUALSEARCH" target="_blank">GitHub</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#usage">Usage</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>License</h3>
+        <p>MIT License - Open source and free to use.</p>
+      </div>
+    </div>
+    <p class="copyright-text">© 2025 Visual Search OCR | Built by Core-Weave</p>
+  </footer>
+</body>
+</html>

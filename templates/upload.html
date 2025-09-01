@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="upload-section">
+  <h2>Upload an Image</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
+    <label for="file-upload" class="custom-file-upload">
+      <input type="file" name="file" id="file-upload" required>
+      Choose File
+    </label>
+    <button type="submit" class="btn upload-btn">Upload & Extract Text</button>
+  </form>
+  {% if error %}
+  <p class="error-message">{{ error }}</p>
+  {% endif %}
+</section>
+{% endblock %}
